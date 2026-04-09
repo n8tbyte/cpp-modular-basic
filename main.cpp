@@ -1,0 +1,13 @@
+#include <iostream>
+#include "calculator.h"
+
+int main() {
+  int a = 25, b = 3;
+
+  std::cout << a << " + " << b << " = " << add(a, b) << std::endl;
+  std::cout << a << " - " << b << " = " << subtract(a, b) << std::endl;
+  std::cout << a << " * " << b << " = " << multiply(a, b) << std::endl;
+  std::cout << a << " / " << b << " = " << divide(a, b) << std::endl;
+
+  return 0;
+}
