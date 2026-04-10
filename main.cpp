@@ -4,10 +4,17 @@
 int main() {
   int a = 25, b = 3;
 
-  std::cout << a << " + " << b << " = " << add(a, b) << std::endl;
-  std::cout << a << " - " << b << " = " << subtract(a, b) << std::endl;
-  std::cout << a << " * " << b << " = " << multiply(a, b) << std::endl;
-  std::cout << a << " / " << b << " = " << divide(a, b) << std::endl;
+  int sum = add(a, b);
+  std::cout << a << " + " << b << " = " << sum << std::endl;
+
+  int difference = subtract(a, b);
+  std::cout << a << " - " << b << " = " << difference << std::endl;
+
+  int product = multiply(a, b);
+  std::cout << a << " * " << b << " = " << product << std::endl;
+
+  int quotient = divide(a, b);
+  std::cout << a << " / " << b << " = " << quotient << std::endl;
 
   return 0;
 }
